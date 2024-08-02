@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+nav {
+  border-bottom: 1px solid rgba(61, 59, 59, 0.443);
+  background-color: rgba(59, 57, 57, 0.463);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-top: 5px;
+  height: 50px;
+}
+
+.main-area-container {
+  display: flex;
+  margin-top: 20px;
+  background-color: black;
+}
+
+nav .nav-left {
+  display: flex;
+}
+nav .nav-left .logo {
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+  margin-top: 3px;
+}
+nav .nav-left .search-box {
+  background-color: rgba(121, 111, 111, 0.628);
+  width: 65%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  margin-left: 30px;
+  margin-top: 3px;
+}
+nav .nav-left .fa-solid fa-magnifying-glass {
+  font-size: 20px;
+}
+nav .nav-left .search-box input {
+  width: 150%;
+  background: transparent;
+  padding: 10px;
+  outline: none;
+  border: 0;
+  color: lightgrey;
+}
+nav .nav-center {
+  position: relative;
+  right: 45px;
+}
+nav .nav-center i {
+  margin: 0 45px 0 45px;
+  font-size: 15px;
+  color: white;
+}
+nav .nav-right {
+  display: flex;
+}
+
+.main-area-container .left-bar {
+  background-color: black;
+  flex-basis: 25%;
+  top: 70px;
+  align-self: flex-start;
+  position: fixed;
+}
+.main-area-container .left-bar .img {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.main-area-container .left-bar .img i {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+  margin: 8px 15px 8px 0;
+}
+.main-area-container .left-bar p {
+  color: white;
+  font-size: 15px;
+}
+.main-area-container .content-area {
+  width: 50%;
+  height: aut0;
+  padding: 20px 20px 0 20px;
+  margin: 0px auto;
+  background-color: black;
+}
+.main-area-container .content-area .top-box {
+  width: 100%;
+  height: 260px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-evenly;
+}
+.main-area-container .content-area .top-box .my_story_card {
+  width: 135px;
+  height: 250px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgba(55, 52, 52, 0.532);
+}
+.main-area-container .content-area .top-box .my_story_card img {
+  width: 135px;
+  height: 300px;
+}
+.main-area-container .content-area .my_post {
+  width: 100%;
+  height: auto;
+  background-color: rgba(55, 52, 52, 0.532);
+  padding: 10px 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+}
+.main-area-container .content-area .my_post .my_post post-top {
+  display: flex;
+  align-items: center;
+}
+.main-area-container .content-area .my_post .post-top input {
+  width: 85%;
+  padding: 10px;
+  margin-left: 16px;
+  border: 0;
+  outline: none;
+  background: rgb(70, 68, 68);
+  border-radius: 30px;
+  font-size: 17px;
+}
+.main-area-container .content-area .my_post hr {
+  width: 100%;
+  height: 1px;
+  background-color: #cccccc;
+  border: 0;
+  margin: 10px 0;
+}
+.main-area-container .content-area .post-bottom {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5px auto;
+}
+.main-area-container .content-area .post-bottom .post-icon {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 5px 40px;
+  cursor: pointer;
+}
+.main-area-container .content-area .post-bottom .post-icon p {
+  color: white;
+}
+.main-area-container .content-area .post-bottom .post-icon .post-icon:hover {
+  background-color: grey;
+  border-radius: 8px;
+}
+.main-area-container .content-area .text-area {
+  width: 100%;
+  height: auto;
+  background-color: rgba(55, 52, 52, 0.532);
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+}
+.main-area-container .content-area .text-area .feedback {
+  display: flex;
+  align-items: center;
+}
+.main-area-container .content-area .text-area .feedback .friends_name {
+  margin-left: 30px;
+}
+.main-area-container .content-area .text-area .feedback .icons {
+  float: right;
+  margin-left: 350px;
+}
+.main-area-container .content-area .text-area .feedback p {
+  font-size: 10px;
+  color: white;
+}
+.main-area-container .content-area .text-area .text {
+  float: left;
+  margin-top: 10px;
+}
+.main-area-container .content-area .text-area .text h5 {
+  color: white;
+}
+.main-area-container .content-area .text-area .text hr {
+  width: 100%;
+  height: 1px;
+  background-color: #cccccc;
+  border: 0;
+  margin-top: 30px;
+}
+.main-area-container .content-area .text-area .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.main-area-container .content-area .text-area .info .emoji {
+  display: flex;
+}
+.main-area-container .content-area .text-area .info .emoji p {
+  margin-left: 10px;
+  font-size: 16px;
+  color: white;
+}
+.main-area-container .content-area .text-area .info .comment {
+  padding: 0 12px;
+  font-size: 15px;
+  color: white;
+}
+.main-area-container .content-area .text-area .send-icons {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px auto;
+  text-align: center;
+}
+.main-area-container .content-area .text-area .send-icons .icon {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 5px 40px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.main-area-container .content-area .text-area .send-icons p {
+  color: white;
+}
+.main-area-container .content-area .text-area .send-icons hr {
+  width: 100%;
+  height: 1px;
+  background-color: #cccccc;
+  border: 0;
+  margin-top: 20px;
+}
+.main-area-container .content-area .Right-bar {
+  width: 300px;
+  height: 92vh;
+  background-color: black;
+  padding: 20px 10px 5px 6px;
+  position: fixed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  overflow: hidden;
+  right: 2px;
+  top: 70px;
+}
+.main-area-container .content-area .Right-bar .user-profile .request {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.main-area-container .content-area .Right-bar .user-profile .request h4 {
+  color: blue;
+  font-size: 15px;
+}
+.main-area-container .content-area .Right-bar .user-profile .mutual friends {
+  display: flex;
+}
+.main-area-container .content-area .Right-bar .user-profile .mutual friends p {
+  color: white;
+}
+.main-area-container .content-area .Right-bar .user-profile h5 {
+  font-size: 15px;
+  color: blue;
+  float: right;
+  margin-left: 75px;
+}
+.main-area-container .content-area .Right-bar .user-profile .Confirmation-buttons {
+  display: flex;
+  height: 35px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.main-area-container .content-area .Right-bar .user-profile .Confirmation-buttons .confirm {
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  width: 100px;
+}
+.main-area-container .content-area .Right-bar .user-profile .Confirmation-buttons .delete {
+  background-color: rgba(128, 128, 128, 0.495);
+  color: white;
+  border-radius: 10px;
+  width: 100px;
+}
+.main-area-container .content-area .Right-bar hr {
+  margin-top: 30px;
+  color: grey;
+}
+.main-area-container .content-area .Right-bar .birthday p {
+  color: white;
+  margin-top: 5px;
+  font-size: 15px;
+}
+.main-area-container .content-area .Right-bar .birthday .updates {
+  display: flex;
+}
+.main-area-container .content-area .Right-bar .birthday .updates h6 {
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.main-area-container .content-area .Right-bar .contacts-info {
+  color: white;
+  display: flex;
+  margin-top: 6px;
+}
+.main-area-container .content-area .Right-bar .contacts-info .contcts-icons {
+  margin-right: 10px;
+}
+.main-area-container .content-area .Right-bar .contacts-info .see-all {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.616);
+  margin-top: 15px;
+  text-align: center;
+  margin-left: 3;
+}
+.main-area-container .content-area .Right-bar .contacts-info .see-all p {
+  padding-top: 5px;
+}/*# sourceMappingURL=style.css.map */
