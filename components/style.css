@@ -195,8 +195,10 @@ nav .nav-right {
   margin-left: 350px;
 }
 .main-area-container .content-area .text-area .feedback p {
-  font-size: 10px;
   color: white;
+}
+.main-area-container .content-area .text-area .feedback small {
+  color: rgb(82, 74, 74);
 }
 .main-area-container .content-area .text-area .text {
   float: left;
